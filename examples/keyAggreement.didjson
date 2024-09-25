@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:example:123456789abcdefghi",
+  "keyAgreement": [
+    "did:example:123456789abcdefghi#keys-1",
+    {
+      "id": "did:example:123#zC9ByQ8aJs8vrNXyDhPHHNNMSHPcaSgNpjjsBYpMMjsTdS",
+      "type": "X25519KeyAgreementKey2019",
+      "controller": "did:example:123",
+      "publicKeyMultibase": "z6LSn6p3HRxx1ZZk1dT9VwcfTBCYgtNWdzdDMKPZjShLNWG7"
+    }
+  ]
+}

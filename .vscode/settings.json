@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.didjson": "json",
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/*.didjson"
+      ],
+      "url": "./did-core.json"
+    }
+  ]
+}
