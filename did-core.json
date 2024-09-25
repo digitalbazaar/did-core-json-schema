@@ -180,19 +180,7 @@
           "type": "string"
         },
         "serviceEndpoint": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "array",
-              "items": [
-                {
-                  "type": "string"
-                }
-              ]
-            }
-          ]
+          "$def": "#/$defs/ServiceEndpoint"
         }
       }
     },
@@ -210,6 +198,48 @@
     "id"
   ],
   "$defs": {
+    "ServiceEndpoint": {
+      "description": "https://w3c.github.io/did-core/#service-properties",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array"
+            }
+          ]
+        },
+        "serviceEndpoint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object"
+            },
+            {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
     "VerificationMethod": {
       "description": "https://w3c.github.io/did-core/#verification-method-properties",
       "type": "object",
