@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DID Core-based Document",
+  "description": "A JSON or JSON-LD representation of the DID Core Abstract Data Model as defined in https://w3c.github.io/did-core/",
   "type": "object",
   "properties": {
     "@context": {
@@ -18,9 +20,11 @@
       ]
     },
     "id": {
+      "description": "A string that conforms to the rules in 3.1 DID Syntax.",
       "type": "string"
     },
     "alsoKnownAs": {
+      "description": "A set of strings that conform to the rules of RFC3986 for URIs.",
       "anyOf": [
         {
           "type": "string"
@@ -36,6 +40,7 @@
       ]
     },
     "controller": {
+      "description": "A string or a set of strings that conform to the rules in 3.1 DID Syntax.",
       "anyOf": [
         {
           "type": "string"
@@ -46,6 +51,7 @@
       ]
     },
     "authentication": {
+      "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
       "items": {
         "anyOf": [
@@ -73,6 +79,7 @@
       }
     },
     "assertionMethod": {
+      "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
       "items": [
         {
@@ -98,6 +105,7 @@
       ]
     },
     "capabilityInvocation": {
+      "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
       "items": [
         {
@@ -123,6 +131,7 @@
       ]
     },
     "capabilityDelegation": {
+      "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
       "items": [
         {
@@ -148,6 +157,7 @@
       ]
     },
     "keyAgreement": {
+      "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
       "items": {
         "anyOf": [
@@ -161,6 +171,7 @@
       }
     },
     "service": {
+      "description": "A set of Service Endpoint maps that conform to the rules in Service properties.",
       "properties": {
         "id": {
           "type": "string"
@@ -186,6 +197,7 @@
       }
     },
     "verificationMethod": {
+      "description": "A set of Verification Method maps that conform to the rules in Verification Method properties.",
       "type": "array",
       "items": [
         {
@@ -199,6 +211,7 @@
   ],
   "$defs": {
     "VerificationMethod": {
+      "description": "https://w3c.github.io/did-core/#verification-method-properties",
       "type": "object",
       "properties": {
         "id": {
