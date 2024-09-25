@@ -184,9 +184,44 @@
           ]
         }
       }
+    },
+    "verificationMethod": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/$defs/VerificationMethod"
+        }
+      ]
     }
   },
   "required": [
     "id"
-  ]
+  ],
+  "$defs": {
+    "VerificationMethod": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "controller": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "publicKeyJwk": {
+          "type": "object"
+        },
+        "publicKeyMultibase": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "controller",
+        "type"
+      ]
+    }
+  }
 }
