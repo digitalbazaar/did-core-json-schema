@@ -81,80 +81,86 @@
     "assertionMethod": {
       "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
-      "items": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "controller": {
-              "type": "string"
-            },
-            "publicKeyMultibase": {
-              "type": "string"
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "controller": {
+                "type": "string"
+              },
+              "publicKeyMultibase": {
+                "type": "string"
+              }
             }
           }
-        }
-      ]
+        ]
+      }
     },
     "capabilityInvocation": {
       "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
-      "items": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "controller": {
-              "type": "string"
-            },
-            "publicKeyMultibase": {
-              "type": "string"
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "controller": {
+                "type": "string"
+              },
+              "publicKeyMultibase": {
+                "type": "string"
+              }
             }
           }
-        }
-      ]
+        ]
+      }
     },
     "capabilityDelegation": {
       "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",
       "type": "array",
-      "items": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "controller": {
-              "type": "string"
-            },
-            "publicKeyMultibase": {
-              "type": "string"
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "controller": {
+                "type": "string"
+              },
+              "publicKeyMultibase": {
+                "type": "string"
+              }
             }
           }
-        }
-      ]
+        ]
+      }
     },
     "keyAgreement": {
       "description": "A set of either Verification Method maps that conform to the rules in Verification Method properties) or strings that conform to the rules in 3.2 DID URL Syntax.",

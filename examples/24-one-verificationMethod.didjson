@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "id": "did:example:123",
+  "authentication": [
+    {
+      "id": "did:example:123#z6MkmM42vxfqZQsv4ehtTjFFxQ4sQKS2w6WR7emozFAn5cxu",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:example:123",
+      "publicKeyMultibase": "z6MkmM42vxfqZQsv4ehtTjFFxQ4sQKS2w6WR7emozFAn5cxu"
+    }
+  ],
+  "capabilityInvocation": [
+    {
+      "id": "did:example:123#z6Mkvtac9bidSz9bBttzn7Yg3oCDHvMY2FtkFLs6SXRQGdQR",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:example:123",
+      "publicKeyMultibase": "z6Mkvtac9bidSz9bBttzn7Yg3oCDHvMY2FtkFLs6SXRQGdQR"
+    }
+  ],
+  "capabilityDelegation": [
+    {
+      "id": "did:example:123#z6MknxsdF4CGVxhRNsx6TvXPFczaHEkajKBBwu75uwBmgpom",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:example:123",
+      "publicKeyMultibase": "z6MknxsdF4CGVxhRNsx6TvXPFczaHEkajKBBwu75uwBmgpom"
+    }
+  ],
+  "assertionMethod": [
+    {
+      "id": "did:example:123#z6MkgYhVuWq4hyc7ZKBGhsY7pb5Bc8V6VPXGPG3EPja8JBFR",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:example:123",
+      "publicKeyMultibase": "z6MkgYhVuWq4hyc7ZKBGhsY7pb5Bc8V6VPXGPG3EPja8JBFR"
+    }
+  ]
+}
