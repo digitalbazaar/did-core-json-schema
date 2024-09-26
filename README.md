@@ -1,11 +1,13 @@
 # [DID Core](https://w3.org/TR/did-core/) JSON Schema
 
-[JSON Schema](https://json-schema.org/) for validating [DID Core](https://w3.org/TR/did-core/)-based JSON and JSON-LD documents.
+[JSON Schema](https://json-schema.org/) for validating
+[DID Core](https://w3.org/TR/did-core/)-based JSON and JSON-LD documents.
 
 ## Files
 
 `did-core.json` is the JSON Schema file.
-`examples/` contains example `.didjson` files extracted from the DID Core specification and validated against the `did-core.json` schema.
+`examples/` contains example `.didjson` files extracted from the DID Core
+specification and validated against the `did-core.json` schema.
 
 Any example ending in `.didjson` is validate-able with the the `did-core.json`
 JSON Schema.
