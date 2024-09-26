@@ -1,0 +1,22 @@
+{
+  "ciphertext": "3SHQQJajNH6q0fyAHmw...",
+  "iv": "QldSPLVnFf2-VXcNLza6mbylYwphW57Q",
+  "protected": "eyJlbmMiOiJYQzIwUCJ9",
+  "recipients": [
+    {
+      "encrypted_key": "BMJ19zK12YHftJ4sr6Pz1rX1HtYni_L9DZvO1cEZfRWDN2vXeOYlwA",
+      "header": {
+        "alg": "ECDH-ES+A256KW",
+        "apu": "Tx9qG69ZfodhRos-8qfhTPc6ZFnNUcgNDVdHqX1UR3s",
+        "apv": "ZGlkOmVsZW06cm9wc3RlbjpFa...",
+        "epk": {
+          "crv": "X25519",
+          "kty": "OKP",
+          "x": "Tx9qG69ZfodhRos-8qfhTPc6ZFnNUcgNDVdHqX1UR3s"
+        },
+        "kid": "did:example:123#zC1Rnuvw9rVa6E5TKF4uQVRuQuaCpVgB81Um2u17Fu7UK"
+      }
+    }
+  ],
+  "tag": "xbfwwDkzOAJfSVem0jr1bA"
+}
